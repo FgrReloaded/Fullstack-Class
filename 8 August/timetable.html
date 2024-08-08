@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+</head>
+
+<style>
+    .table__body {
+        height: 100vh;
+    }
+
+    .table__body > table {
+        background: rgb(155, 155, 192);
+        padding: 2px;
+        border-radius: 8px;
+    }
+
+    .table__body table tr th {
+        background: lightcoral;
+        color: black;
+        padding: 5px 8px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-bottom: 1px solid rgb(72, 137, 228);
+        border-radius: 8px;
+    }
+
+    .table__body table tr td {
+        padding: 8px 16px;
+        font-family: monospace;
+        border-radius: 8px;
+        border-bottom: 1px solid rgb(115, 83, 83);
+    }
+
+    .table__body .time {
+        background: rgb(115, 83, 83);
+        color: #fff;
+    }
+</style>
+
+<body>
+    <div class="table__body">
+        <table align="center">
+            <caption>
+                <h1>Timetable</h1>
+            </caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Time</th>
+                    <th bgcolor="green">Monday</th>
+                    <th bgcolor="green">Tuesday</th>
+                    <th bgcolor="green">Wednesday</th>
+                    <th bgcolor="green">Thursday</th>
+                    <th bgcolor="green">Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td class="time" colspan="2">9:00-10:00</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                </tr>
+                <tr align="center">
+                    <td class="time" id="time" colspan="2">10:00-11:00</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                </tr>
+                <tr align="center">
+                    <td class="time" colspan="2">11:00-12:00</td>
+                    <td>English</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>English</td>
+                </tr>
+                <tr align="center">
+                    <td class="time" colspan="2">12:00-1:00</td>
+                    <td colspan="5">Lunch</td>
+                </tr>
+                <tr align="center">
+                    <td class="time" colspan="2">1:00-2:00</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td>English</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                </tr>
+                <tr align="center">
+                    <td class="time" colspan="2">2:00-3:00</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>English</td>
+                    <td>Science</td>
+                </tr>
+                <tr align="center">
+                    <td class="time" colspan="2">3:00-4:00</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
