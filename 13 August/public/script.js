@@ -66,13 +66,13 @@ const numStr = parseInt(strNum);
 // console.log('AFTER TYPECASTED: ', typeof numStr, numStr);
 
 let bool = true;
-console.log("BEFORE TYPECASTED: ", typeof bool, bool);
+// console.log("BEFORE TYPECASTED: ", typeof bool, bool);
 // let numBool = String(bool);
 numBool = bool.toString();
 // console.log("AFTER TYPECASTED: ", typeof numBool, numBool);
 
 const arrayToTypeCast = [1,2,3,4,5];
-console.log(arrayToTypeCast.join(" "))
+// console.log(arrayToTypeCast.join(" "))
 
 
 
@@ -87,8 +87,11 @@ const newUserDetails = new Object();
 newUserDetails.name = "Bob";
 newUserDetails.age = 30;
 
-console.log(userDetails.name);
-console.log(newUserDetails['age']);
-
+// console.log(userDetails.name);
+// console.log(newUserDetails['age']);
 
 delete userDetails.age;
+
+for (const key in newUserDetails) {
+    // console.log(key +":", newUserDetails[key]);
+}
